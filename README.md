@@ -66,7 +66,7 @@ Let's start simple. Let's assume you've laid out your project like so;
 ```
 MyFunctionApp/
 ├── src
-│   └── Example
+│   └── HelloWorld
 │       ├── function.json
 │       └── index.ts
 ├── host.json
@@ -80,11 +80,11 @@ Let's break it down...
 
 ### src/
 
-The `src/` folder structure is totally up to you. In this example the "Example" function is in the top level, but you can place it anywhere. My personal opinion is to create a `functions/` folder - so it's easy to locate them. But that's just one opinion.
+The `src/` folder structure is totally up to you. In this example the "HelloWorld" function is in the top level, but you can place it anywhere. My personal opinion is to create a `functions/` folder - so it's easy to locate them. But that's just one opinion.
 
 This folder can contain TypeScript files or regular JavaScript files, it's up to you which language you wish to use. See the [Configuration/TypeScript](#typescript) section for more information.
 
-### src/Example/
+### src/HelloWorld/
 
 This folder contains your function's `function.json` file and it's entry point file (`index.js` or `index.ts`). See [Azure Functions developers guide](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference) for more information.
 
