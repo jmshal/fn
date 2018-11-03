@@ -11,5 +11,15 @@
     "find": "^0.2.9",
     "virtual-module-webpack-plugin": "^0.4.0",
     "webpack": "^4.24.0"
-  }
+  },
+  "author": {
+    "name": "Jacob Marshall",
+    "email": "git@jacobmarshall.co",
+    "url": "https://j.msh.al"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmshal/fn.git"
+  },
+  "license": "MIT"
 }

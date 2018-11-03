@@ -14,20 +14,38 @@ Object.keys(options).forEach((key) => {
   options[key] = value;
   options[camel(key)] = value;
 });
+
+// shorthand options
+[
+  ['e', 'env'],
+  ['s', 'sourceMaps'],
+]
+.forEach(([short, long]) => {
+  if (short in options) {
+    options[long] = options[short];
+    delete options[short];
+  }
+});
+
 delete options._;
 
-switch (argv._[0]) {
-  case 'build': {
-    require('./build')(options);
-    break;
-  }
-  case 'watch': {
-    require('./watch')(options);
-    break;
-  }
-  default: {
-    console.error('Unknown command.');
-    break;
+if (options.help) {
+  require('./help')(options);
+} else {
+  switch (argv._[0]) {
+    case 'build': {
+      require('./build')(options);
+      break;
+    }
+    case 'watch': {
+      require('./watch')(options);
+      break;
+    }
+    case 'help':
+    default: {
+      require('./help')(options);
+      break;
+    }
   }
 }
 
