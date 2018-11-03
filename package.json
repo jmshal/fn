@@ -3,8 +3,11 @@
   "description": "A slightly opinionated Azure Functions CLI",
   "version": "0.0.0",
   "bin": {
-    "fn": "./cli.js"
+    "fn": "./src/cli.js"
   },
+  "files": [
+    "src/"
+  ],
   "dependencies": {
     "awesome-typescript-loader": "^5.2.1",
     "copy-webpack-plugin": "^4.6.0",

@@ -11,6 +11,6 @@ Usage: fn [command] [options]
 
     -h, --help                   Output usage information
     -e, --env <string>           Sets the environment/mode (eg. production)
-    -s, --source-maps <boolean>  Path for output directory
+    -s, --source-maps <boolean>  Enable/disable sourcemaps
 `);
 };
