@@ -34,7 +34,7 @@ Option | Type | Description
 env | `string` | This option controls the webpack mode. Eg. `production` or `development`. Code is optimised & minified when this option is set to `production`.
 source-maps | `boolean` | Enables/disables sourcemaps.
 
-### Actions
+### Commands
 
 #### `fn watch [options]`
 
